@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <form role="form">
+            <div class="col-lg-6 col-sm-offset-3">
+                <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong></div>
+                <div class="form-group">
+                    <label for="InputName">Enter Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="name" ng-model="newUser.name" placeholder="Enter Name" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputEmail">Enter Email</label>
+                    <div class="input-group">
+                        <input type="email" class="form-control" name="InputEmail" ng-model="newUser.email" placeholder="Enter Email" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="InputEmail">Enter Password</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" name="password" ng-model="newUser.password" placeholder="Enter password" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <input type="submit" name="submit" value="Submit" ng-click="newuserRegistration()" class="btn btn-info pull-right">
+            </div>
+        </form>
+    </div>
+</div>
